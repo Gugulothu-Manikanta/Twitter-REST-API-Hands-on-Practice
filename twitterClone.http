@@ -1,0 +1,46 @@
+###
+POST http://localhost:3000/register/
+Content-Type:application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+
+###
+GET http://localhost:3000/login/
+
+
+###
+POST http://localhost:3000/login/
+Content-Type:application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+
+###
+GET http://localhost:3000/user/followers/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzQzMjIzNjk0fQ.xaT6Z_2IPkE1DW5AHEx_LnV1e1kiZnBTaX3mQu26I-g
+GET http://localhost:3000/user/following/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzQyNzE5NzI2fQ.AkprHMwpLwifoLy6DX8yiFbtUkr0PXuFZS0ItCNwsjs
+
+###
+POST http://localhost:3000/user/tweets/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzQyNzE5NzI2fQ.AkprHMwpLwifoLy6DX8yiFbtUkr0PXuFZS0ItCNwsjs
+Content-Type:application/json
+
+{
+  "tweet":"The Mornings..."
+}
+
+
+###
+DELETE http://localhost:3000/tweets/3/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNzQyNzE5NzI2fQ.AkprHMwpLwifoLy6DX8yiFbtUkr0PXuFZS0ItCNwsjs
+
